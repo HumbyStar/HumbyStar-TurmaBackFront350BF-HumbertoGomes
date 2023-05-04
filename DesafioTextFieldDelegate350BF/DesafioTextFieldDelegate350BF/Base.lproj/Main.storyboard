@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DesafioTextFieldDelegate350BF" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Digite seu nome:" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="g7O-dV-Gjd">
+                                <rect key="frame" x="20" y="79" width="353" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Digite seu endereço:" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xBQ-jh-a0n">
+                                <rect key="frame" x="20" y="133" width="353" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Digite sua senha:" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yrY-7E-OWD">
+                                <rect key="frame" x="20" y="187" width="353" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Confirme sua senha:" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eIS-BC-J7K">
+                                <rect key="frame" x="20" y="241" width="353" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4dK-AB-IWY">
+                                <rect key="frame" x="147" y="320" width="99" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Cadastrar"/>
+                                <connections>
+                                    <action selector="tappedRegisterButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ag4-J3-VNz"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                        <constraints>
+                            <constraint firstItem="xBQ-jh-a0n" firstAttribute="top" secondItem="g7O-dV-Gjd" secondAttribute="bottom" constant="20" id="5ll-dg-aY5"/>
+                            <constraint firstItem="g7O-dV-Gjd" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="8e7-jS-Hye"/>
+                            <constraint firstItem="g7O-dV-Gjd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="B2Q-ou-4jb"/>
+                            <constraint firstItem="yrY-7E-OWD" firstAttribute="trailing" secondItem="xBQ-jh-a0n" secondAttribute="trailing" id="EVg-sw-v1t"/>
+                            <constraint firstItem="yrY-7E-OWD" firstAttribute="leading" secondItem="xBQ-jh-a0n" secondAttribute="leading" id="HXB-v7-0Cs"/>
+                            <constraint firstItem="4dK-AB-IWY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Mmh-RP-YGN"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="g7O-dV-Gjd" secondAttribute="trailing" constant="20" id="Pxf-58-4QV"/>
+                            <constraint firstItem="eIS-BC-J7K" firstAttribute="trailing" secondItem="yrY-7E-OWD" secondAttribute="trailing" id="RNX-l2-abr"/>
+                            <constraint firstItem="yrY-7E-OWD" firstAttribute="top" secondItem="xBQ-jh-a0n" secondAttribute="bottom" constant="20" id="XS5-0u-rJD"/>
+                            <constraint firstItem="eIS-BC-J7K" firstAttribute="leading" secondItem="yrY-7E-OWD" secondAttribute="leading" id="YhI-Wq-tmN"/>
+                            <constraint firstItem="eIS-BC-J7K" firstAttribute="top" secondItem="yrY-7E-OWD" secondAttribute="bottom" constant="20" id="jwc-AH-yVz"/>
+                            <constraint firstItem="4dK-AB-IWY" firstAttribute="top" secondItem="eIS-BC-J7K" secondAttribute="bottom" constant="45" id="oqn-dw-ru6"/>
+                            <constraint firstItem="xBQ-jh-a0n" firstAttribute="leading" secondItem="g7O-dV-Gjd" secondAttribute="leading" id="tzH-pv-InH"/>
+                            <constraint firstItem="xBQ-jh-a0n" firstAttribute="trailing" secondItem="g7O-dV-Gjd" secondAttribute="trailing" id="wwb-if-ddw"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="addressTextField" destination="xBQ-jh-a0n" id="GQY-pp-gF8"/>
+                        <outlet property="confirmPasswordTextField" destination="eIS-BC-J7K" id="T4y-7x-Bgu"/>
+                        <outlet property="nameTextField" destination="g7O-dV-Gjd" id="XTf-xL-bCq"/>
+                        <outlet property="passwordTextField" destination="yrY-7E-OWD" id="uHc-f0-wX1"/>
+                        <outlet property="registerButton" destination="4dK-AB-IWY" id="rUX-zk-MCx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="138" y="5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
