@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller2-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="ViewController2" id="Y6W-OH-hqX" customClass="ViewController2" customModule="Exercise_protocol_nofitication" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="OPCOES" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q5o-Rr-vSJ">
+                                <rect key="frame" x="137" y="121" width="119" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" systemColor="systemYellowColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hcY-ia-QPR">
+                                <rect key="frame" x="76.666666666666686" y="239" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="0ti-fK-A3U"/>
+                                    <constraint firstAttribute="width" constant="240" id="3Ce-2t-fVF"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <backgroundConfiguration key="background" image="macbook"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="tapToBack1:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="PUU-D3-JRr"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f5R-RO-B9A">
+                                <rect key="frame" x="76.666666666666686" y="447" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="CMt-FN-661"/>
+                                    <constraint firstAttribute="height" constant="128" id="Lnq-fj-ra5"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <backgroundConfiguration key="background" image="computador"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="tapToBack2:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="DE6-A8-tKp"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="labelColor"/>
+                        <constraints>
+                            <constraint firstItem="f5R-RO-B9A" firstAttribute="top" secondItem="hcY-ia-QPR" secondAttribute="bottom" constant="80" id="7YS-1W-cdK"/>
+                            <constraint firstItem="f5R-RO-B9A" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="M9F-Hp-awX"/>
+                            <constraint firstItem="hcY-ia-QPR" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="NJQ-CI-drS"/>
+                            <constraint firstItem="Q5o-Rr-vSJ" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="62" id="qsn-Au-eSN"/>
+                            <constraint firstItem="hcY-ia-QPR" firstAttribute="top" secondItem="Q5o-Rr-vSJ" secondAttribute="bottom" constant="82" id="sPv-V0-ZzT"/>
+                            <constraint firstItem="Q5o-Rr-vSJ" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="vFq-Ia-C3x"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="67.938931297709928" y="3.5211267605633805"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="computador" width="512" height="512"/>
+        <image name="macbook" width="1499" height="802"/>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
